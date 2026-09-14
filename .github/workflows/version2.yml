@@ -1,0 +1,13 @@
+name: "Pull request"
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  version2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: pull request
+        run: echo "checking feature branch before merging"
