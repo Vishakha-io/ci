@@ -1,0 +1,14 @@
+name: "Version1"
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  version1:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Master push"
+        run: echo "This version 1 of yml for master push only"
