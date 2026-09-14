@@ -1,0 +1,13 @@
+name: "Feature"
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  version1:
+    runs-on: ubuntu-latest;
+    steps:
+      - name: "From feature"
+        run: echo "Hello from feature version 1"
